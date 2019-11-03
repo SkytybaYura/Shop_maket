@@ -1,0 +1,43 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+
+}
+header{
+    background: #9999;
+    padding: 20px ;
+
+}
+.header-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header-container a{
+    color: #000;
+    font-size: 16px;
+    margin-right: 50px;
+    padding: 15px 6px;
+
+}
+.header-container a:hover{
+    background: yellow;
+}
+
+ul{
+    display: flex;
+}
+nav{
+    margin-top: 15px;
+}

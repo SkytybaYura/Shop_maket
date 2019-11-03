@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/index.css">
+	<title>Form</title>
+
+	<style>
+		label {
+			width: 150px;
+			display: inline-block;
+		}
+	</style>
+
+</head>
+
+
+<body>
+	<header>
+		<div class="header-container">
+			<div class="logo"></div>
+			<nav role="navigation">
+
+				<ul class="main-menu">
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
+					<li>
+						<a href="#">CATALOG</a>
+					</li>
+					<li>
+						<a href="#">LOG IN</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<section>
+		<h3>Форми на сайті</h3>
+
+		<form action="https://formspree.io/id" method="POST">
+			<p>
+				<label>Напишіть своє імя:</label>
+				<input name="name" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Name" required autofocus>
+                </p>
+				<p>
+					<label>Напишіть своє прізвище:</label>
+					<input name="surname" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Surname" required>
+                </p>
+					<p>
+						<label>Напишіть свій імейл:</label>
+						<input name="mail" type="email" placeholder="Email" required>
+                </p>
+						<p>
+							<label >Напишіть свій пароль:</label>
+							<input name="pass" type="password" placeholder="Your password" >
+                </p>
+							<p>
+								<label>Напишіть свій телефон:</label>
+								<input name="phone" pattern="\+\d{5}[\s]?\d{3}[\s]?\d{2}[\s]?\d{2}" type="tel" placeholder="+38093 000 00 00" >
+                </p>
+
+
+								<p>
+									<label>Вибиірть свою стать:</label>
+									<label>
+                <input type="radio" name="gender" value="mail">Жіноча
+            </label>
+									<label>
+                <input type="radio" name="gender" value="female">Чоловіча
+            </label>
+									<label>
+                <input type="radio" name="gender" value="other">Інша
+            </label>
+								</p>
+
+
+
+
+
+								<p>
+									<input type="submit" value="send"> <input type="reset" value="clean">
+                </p>
+		</form>
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
