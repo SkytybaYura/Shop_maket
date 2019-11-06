@@ -50,7 +50,7 @@ header nav .menu a:hover{
     }
 }
 header .banner{
-    background-image: url(../img/header1.jpg);
+    background-image: url(../img/header.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -59,10 +59,11 @@ header .banner{
     justify-content: center;
     min-height: 500px;
 }
-header .banner h1{
+header .banner h3{
     font-family: 'Staatliches', cursive;
     font-size: 3em;
-    color: aqua;
+    background: yellow;
+    color: black;
     margin-bottom: 1rem;
 }
 .button {
