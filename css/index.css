@@ -98,9 +98,8 @@ main .product-list article img{
     display: block;
     width: 100%;
 }
-main .product-list article p{
+main .product-list article h3{
     text-align: center;
-    text-decoration: none;
     text-transform: uppercase;
     display:block;
     width: 100%;
