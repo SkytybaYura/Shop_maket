@@ -2,7 +2,7 @@
 
 :root{
     font-family: 'Muli', sans-serif;
-    --main-color: black;
+     --main-color: black;
      --accent-color: blue;
      scroll-behavior: smooth;
 }
