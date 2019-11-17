@@ -15,8 +15,12 @@ h1, h2, h3, p, div, nav, header, footer {
     margin: 0;
     padding: 0;
 }
+main{
+    background: gray;
+    padding: 20px;
+}
 header{
-background:turquoise;
+background:gray;
 }
 header nav .logo{
    font-family: 'Staatliches', cursive;
@@ -58,6 +62,7 @@ header .banner{
     flex-direction:column;
     justify-content:center;
     min-height: 500px;
+    padding: 10px;
 }
 header .banner h3{
     font-family: 'Muli', sans-serif;
@@ -136,36 +141,3 @@ main .product-list article .button{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-/*
-
-.specialize-container{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-.specialize-container h3{
-    font-size: 35px;
-
-}
-.specialize-container p{
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 24px;
-}
-
-.first-p{
-    font-size: 20px;
-    color:yellow;
-}
-.bottom-card{
-     background: #414146;
-    position: relative;
-    top:-30px;
-}
-.specialize-cards{
-    display: flex;
-   justify-content: space-between;
-}
-.contact{
-    text-align: center;
-} */

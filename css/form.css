@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Staatliches&display=swap');
+
+:root{
+    font-family: 'Muli', sans-serif;
+     --main-color: black;
+     --accent-color: blue;
+     scroll-behavior: smooth;
+}
 body{
     max-width:960px;
     margin: auto;
