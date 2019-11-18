@@ -27,15 +27,15 @@
         </header>
         <br>
         <section>
-            <h3>Форми на сайті</h3>
+            <h3>Welcome</h3>
             <form class="login-form" action="https://formspree.io/id" method="POST">
                 <p>
-                    <label>Напишіть своє імя:</label>
-                    <input name="name" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Name" required autofocus>
+                    <label for="username">Напишіть своє імя:</label>
+                    <input id="username" name="username" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Name"   required autofocus>
                 </p>
                 <p>
-                    <label>Напишіть своє прізвище:</label>
-                    <input name="surname" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Surname" required>
+                    <label for="surname">Напишіть своє прізвище:</label>
+                    <input id = "surname" name="surname" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Surname" required>
                 </p>
                 <p>
                     <label>Напишіть свій імейл:</label>
@@ -45,11 +45,11 @@
                     <label>Напишіть свій пароль:</label>
                     <input name="pass" type="password" placeholder="Your password">
                 </p>
-                <p>
+                <!-- <p>
                     <label>Напишіть свій телефон:</label>
                     <input name="phone" pattern="\+\d{5}[\s]?\d{3}[\s]?\d{2}[\s]?\d{2}" type="tel" placeholder="+38093 000 00 00">
-                </p>
-                <p>
+                </p> -->
+                <!-- <p>
                     <label>Вибиірть свою стать:</label>
                     <label>
                         <input type="radio" name="gender" value="mail">Жіноча
@@ -63,7 +63,7 @@
                         <input type="radio" name="gender" value="other">Інша
 
                     </label>
-                </p>
+                </p> -->
                 <p>
                     <input type="submit" value="send">
                     <input type="reset" value="clean">
