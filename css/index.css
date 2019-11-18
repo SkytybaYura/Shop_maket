@@ -151,24 +151,17 @@ main .product-list article .button{
     text-align: center;
     padding: 20px;
 }
-@media (min-width: 540px) {
+@media (min-width: 460px) {
     .contact .info{
         display: grid;
-        grid-template-columns:  1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
     }
-}
-.info {
-    display: flex;
-    justify-content:center;
-    flex-direction: row-reverse;
 }
 .icon {
 	display: flex;
 	justify-content: center;
 }
-
-
 footer {
 	background:gray;
     padding: 30px;
