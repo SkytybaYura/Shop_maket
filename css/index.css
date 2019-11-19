@@ -7,7 +7,7 @@
      scroll-behavior: smooth;
 }
 body{
-    max-width:960px;
+    max-width:980px;
     margin: auto;
     background: #cccc;
 }
@@ -82,7 +82,6 @@ header .banner h2{
 .button {
     display: inline-block;
     padding: 0.35em 1.2em;
-    border: 0.1em solid #FFFFFF;
     margin: 0 0.3em 0.3em 0;
     border-radius: 0.12em;
     box-sizing: border-box;

@@ -4,25 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/form.css">
         <title>Form</title>
     </head>
     <body>
         <header>
-            <nav>
-                <div class="logo">SHOP</div>
-                <ul class="menu">
-                    <li>
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#catalog">CATALOG</a>
-                    </li>
-                    <li>
-                        <a href="#">LOG IN</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">SHOP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                Home <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">Login</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog
+						</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <br>
@@ -31,11 +44,11 @@
             <form class="login-form" action="https://formspree.io/id" method="POST">
                 <p>
                     <label for="username">Напишіть своє імя:</label>
-                    <input id="username" name="username" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Name"   required autofocus>
+                    <input id="username" name="username" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Name" required autofocus>
                 </p>
                 <p>
                     <label for="surname">Напишіть своє прізвище:</label>
-                    <input id = "surname" name="surname" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Surname" required>
+                    <input id="surname" name="surname" pattern="[A-ZА-ЯЇ][a-zа-яї]+" type="text" placeholder="Surname" required>
                 </p>
                 <p>
                     <label>Напишіть свій імейл:</label>
@@ -45,31 +58,21 @@
                     <label>Напишіть свій пароль:</label>
                     <input name="pass" type="password" placeholder="Your password">
                 </p>
-                <!-- <p>
-                    <label>Напишіть свій телефон:</label>
-                    <input name="phone" pattern="\+\d{5}[\s]?\d{3}[\s]?\d{2}[\s]?\d{2}" type="tel" placeholder="+38093 000 00 00">
-                </p> -->
-                <!-- <p>
-                    <label>Вибиірть свою стать:</label>
-                    <label>
-                        <input type="radio" name="gender" value="mail">Жіноча
-
-                    </label>
-                    <label>
-                        <input type="radio" name="gender" value="female">Чоловіча
-
-                    </label>
-                    <label>
-                        <input type="radio" name="gender" value="other">Інша
-
-                    </label>
-                </p> -->
                 <p>
-                    <input type="submit" value="send">
-                    <input type="reset" value="clean">
+                    <input class="btn btn-danger" value="send">
+                    <input class="btn btn-success" value="clean">
                 </p>
             </form>
         </section>
         <script src="js/form.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
     </body>
 </html>
