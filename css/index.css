@@ -19,6 +19,21 @@ main{
     background: gray;
     padding: 20px;
 }
+.card {
+    height: 100%;
+}
+
+.alert {
+    position: fixed;
+    top: 50px; 
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
+}
 header{
 background:gray;
 }
@@ -79,7 +94,7 @@ header .banner h2{
     color:yellow;
 }
  
-.button {
+/* .button {
     display: inline-block;
     padding: 0.35em 1.2em;
     margin: 0 0.3em 0.3em 0;
@@ -126,7 +141,7 @@ main .product-list article .button{
     display: flex;
     justify-content: space-around;
     align-content: end;
-}
+} */
 @media (min-width: 540px){
     main .product-list{
         display: grid;
