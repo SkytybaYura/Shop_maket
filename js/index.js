@@ -43,5 +43,5 @@ function initializeClock(id, endtime) {
   const timeinterval = setInterval(updateClock, 1000);
 }
 
-let deadline="November 28 2019 00:00:00 GMT+0300"; //for Ukraine
+let deadline="November 28 2019 00:00:00 GMT+0300"; 
 initializeClock('countdown', deadline);

@@ -12,9 +12,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, './')));
 
-app.post('/login', (req, res) => {
+app.post('/order', (req, res) => {
   const fs = require('fs');
-  fs.appendFile('./logins.txt', JSON.stringify(req.body) + '\n', function(err) {
+  fs.appendFile('./orders.txt', JSON.stringify(req.body) + '\n', function(err) {
     if (err) {
       res.status(500).send('Server error');
       return console.log(err);
